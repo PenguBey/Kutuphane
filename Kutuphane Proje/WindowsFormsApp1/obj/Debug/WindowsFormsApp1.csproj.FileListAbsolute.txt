@@ -21,3 +21,16 @@ D:\Visual Stadia Proje\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsA
 D:\Visual Stadia Proje\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormUye.resources
 D:\Visual Stadia Proje\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.GirisEkrani.resources
 D:\Visual Stadia Proje\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormMenu.resources
+D:\GitHub\kutuphane\Kutuphane Proje\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+D:\GitHub\kutuphane\Kutuphane Proje\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+D:\GitHub\kutuphane\Kutuphane Proje\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+D:\GitHub\kutuphane\Kutuphane Proje\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+D:\GitHub\kutuphane\Kutuphane Proje\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.SuggestedBindingRedirects.cache
+D:\GitHub\kutuphane\Kutuphane Proje\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormUye.resources
+D:\GitHub\kutuphane\Kutuphane Proje\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormGiris.resources
+D:\GitHub\kutuphane\Kutuphane Proje\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormMenu.resources
+D:\GitHub\kutuphane\Kutuphane Proje\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+D:\GitHub\kutuphane\Kutuphane Proje\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+D:\GitHub\kutuphane\Kutuphane Proje\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+D:\GitHub\kutuphane\Kutuphane Proje\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+D:\GitHub\kutuphane\Kutuphane Proje\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb

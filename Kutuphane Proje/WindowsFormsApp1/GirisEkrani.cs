@@ -35,6 +35,7 @@ namespace WindowsFormsApp1
                 var deger = sql.komut.ExecuteScalar();
                 if (deger != null)
                 {
+                    sql.adim = textBox1.Text;
                     this.Close();
                     FormMenu gec = new FormMenu();
                     gec.Show();
