@@ -70,7 +70,7 @@ namespace WindowsFormsApp1
         private void label5_Click(object sender, EventArgs e)
         {
             this.Hide();
-            GirisEkrani gec =new GirisEkrani();
+            FormGiris gec =new FormGiris();
             gec.Show();
         }
     }

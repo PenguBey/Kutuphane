@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1
 {
-    partial class GirisEkrani
+    partial class FormGiris
     {
         /// <summary>
         /// Required designer variable.
@@ -112,7 +112,7 @@
             this.textBox1.TabIndex = 6;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // GirisEkrani
+            // FormGiris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -125,7 +125,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Name = "GirisEkrani";
+            this.Name = "FormGiris";
             this.Text = "GirisEkrani";
             this.Load += new System.EventHandler(this.GirisEkrani_Load);
             this.ResumeLayout(false);

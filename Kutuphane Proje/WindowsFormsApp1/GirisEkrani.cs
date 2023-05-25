@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class GirisEkrani : Form
+    public partial class FormGiris : Form
     {
-        public GirisEkrani()
+        public FormGiris()
         {
             InitializeComponent();
         }
