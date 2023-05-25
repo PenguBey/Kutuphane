@@ -128,6 +128,7 @@
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "FormUye";
             this.Text = "Üye Ekranı";
+            this.Load += new System.EventHandler(this.FormUye_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -73,6 +73,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sql_baglantı.cs" />
+    <EmbeddedResource Include="FormKitaplar.resx">
+      <DependentUpon>FormKitaplar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UyeEkrani.resx">
       <DependentUpon>UyeEkrani.cs</DependentUpon>
     </EmbeddedResource>

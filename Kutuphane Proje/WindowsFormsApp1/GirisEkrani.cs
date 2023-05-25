@@ -29,6 +29,7 @@ namespace WindowsFormsApp1
             sql.Baglantı();
             if (textBox1.Text != "" && textBox2.Text != "")
             {
+                sql.komut.Parameters.Clear();
                 sql.komut.CommandText = "select * from Table_giris where username = @ad and password = @sifre";
                 sql.komut.Parameters.AddWithValue("ad", textBox1.Text);
                 sql.komut.Parameters.AddWithValue("sifre", textBox2.Text);

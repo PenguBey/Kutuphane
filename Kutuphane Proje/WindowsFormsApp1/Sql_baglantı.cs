@@ -11,7 +11,7 @@ namespace WindowsFormsApp1
 {
     class Sql_baglantı
     {
-        public string adim = "";
+        public static string adim; 
 
         public SqlConnection baglan;
         public SqlCommand komut;

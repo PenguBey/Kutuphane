@@ -16,5 +16,10 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+        Sql_baglantı sql = new Sql_baglantı();
+        private void FormKitaplar_Load(object sender, EventArgs e)
+        {
+            label1.Text = "Kullanıcı: " + sql.adim;
+        }
     }
 }

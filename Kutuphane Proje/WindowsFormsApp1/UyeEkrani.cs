@@ -42,6 +42,7 @@ namespace WindowsFormsApp1
                 }
                 else
                 {
+                    sql.komut.Parameters.Clear();
                     sql.komut.CommandText = "insert into Table_giris (username,password) values (@ad,@sifre)";
                     sql.komut.Parameters.AddWithValue("ad", textBox1.Text);
                     sql.komut.Parameters.AddWithValue("sifre", textBox2.Text);
@@ -72,6 +73,11 @@ namespace WindowsFormsApp1
             this.Hide();
             FormGiris gec =new FormGiris();
             gec.Show();
+        }
+
+        private void FormUye_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
