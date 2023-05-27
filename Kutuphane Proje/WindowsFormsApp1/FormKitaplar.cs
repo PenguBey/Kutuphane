@@ -179,14 +179,12 @@ namespace WindowsFormsApp1
                 SqlDataReader oku = sql.komut.ExecuteReader();
                 if (oku.Read())
                 {              
-                        sql.baglan.Close();
-                        sql.Baglantı();
-                        sql.komut.CommandText = "update Table_kitaplar set durum = null where durum = @durumum";
-                        sql.komut.Parameters.AddWithValue("durumum", sql.adim);
-                        sql.komut.ExecuteNonQuery();
-                        label6.Text = "kitabınız başarıyla iade edildi";
-                   
-
+                 sql.baglan.Close();
+                 sql.Baglantı();
+                 sql.komut.CommandText = "update Table_kitaplar set durum = null where durum = @durumum";
+                 sql.komut.Parameters.AddWithValue("durumum", sql.adim);
+                 sql.komut.ExecuteNonQuery();
+                 label6.Text = "kitabınız başarıyla iade edildi";
                 }
                 else
                 {

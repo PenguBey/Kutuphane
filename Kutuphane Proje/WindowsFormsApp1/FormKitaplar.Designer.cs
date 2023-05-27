@@ -165,7 +165,7 @@
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ControlDark;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold);
-            this.button1.Location = new System.Drawing.Point(264, 72);
+            this.button1.Location = new System.Drawing.Point(264, 81);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(411, 49);
             this.button1.TabIndex = 7;
@@ -224,7 +224,7 @@
             // 
             // button_geriver
             // 
-            this.button_geriver.Location = new System.Drawing.Point(264, 43);
+            this.button_geriver.Location = new System.Drawing.Point(264, 53);
             this.button_geriver.Name = "button_geriver";
             this.button_geriver.Size = new System.Drawing.Size(75, 23);
             this.button_geriver.TabIndex = 9;
@@ -234,7 +234,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(345, 43);
+            this.button3.Location = new System.Drawing.Point(345, 53);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 9;
@@ -245,7 +245,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(237, 9);
+            this.label6.Location = new System.Drawing.Point(207, 5);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(19, 13);
             this.label6.TabIndex = 10;
