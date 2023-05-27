@@ -263,5 +263,13 @@ namespace WindowsFormsApp1
                 label6.Text = "ekleyeceğiniz kitabın bilgilerini eksiksiz doldurunuz";
             }
         }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormMenu gec = new FormMenu();
+            
+            gec.ShowDialog();
+        }
     }
 }

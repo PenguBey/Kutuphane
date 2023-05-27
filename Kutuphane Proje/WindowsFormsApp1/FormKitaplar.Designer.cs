@@ -51,6 +51,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.buttonsil = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // listView1
@@ -275,11 +276,23 @@
             this.button4.Visible = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.ForeColor = System.Drawing.Color.Blue;
+            this.label7.Location = new System.Drawing.Point(13, 425);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(47, 13);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "Geri dön";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
+            // 
             // FormKitaplar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.buttonsil);
             this.Controls.Add(this.label6);
@@ -332,5 +345,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button buttonsil;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label7;
     }
 }

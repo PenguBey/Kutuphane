@@ -52,6 +52,12 @@
     <Compile Include="FormKitaplar.Designer.cs">
       <DependentUpon>FormKitaplar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formkullanıcılar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formkullanıcılar.Designer.cs">
+      <DependentUpon>Formkullanıcılar.cs</DependentUpon>
+    </Compile>
     <Compile Include="UyeEkrani.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +81,9 @@
     <Compile Include="Sql_baglantı.cs" />
     <EmbeddedResource Include="FormKitaplar.resx">
       <DependentUpon>FormKitaplar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formkullanıcılar.resx">
+      <DependentUpon>Formkullanıcılar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UyeEkrani.resx">
       <DependentUpon>UyeEkrani.cs</DependentUpon>

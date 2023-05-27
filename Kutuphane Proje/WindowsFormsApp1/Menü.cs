@@ -19,12 +19,14 @@ namespace WindowsFormsApp1
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Formkullanıcılar gec = new Formkullanıcılar();
+            gec.ShowDialog();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
             FormKitaplar formKitaplar = new FormKitaplar();
             formKitaplar.ShowDialog(); 
             
