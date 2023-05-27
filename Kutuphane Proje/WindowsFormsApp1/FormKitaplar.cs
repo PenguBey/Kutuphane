@@ -136,14 +136,11 @@ namespace WindowsFormsApp1
             {
                 sql.Baglantı();
                 sql.komut.Parameters.Clear();
-                sql.komut.CommandText = "select durum from Table_kitaplar where ad = @adim and durum = @ durumum";
+                sql.komut.CommandText = "select durum from Table_kitaplar where ad = @adim and durum is null";
                 sql.komut.Parameters.AddWithValue("adim", textBox1.Text);
-                
                 SqlDataReader oku = sql.komut.ExecuteReader();
                 if (oku.Read())
-                {
-                   if (oku["durum"].ToString() =="" )
-                   {
+                { 
                   
                        sql.baglan.Close();
                        sql.Baglantı();
@@ -153,19 +150,11 @@ namespace WindowsFormsApp1
                        sql.komut.ExecuteNonQuery();
                        label6.Text = "kitabınız başarıyla ödünç alındı";
                   
-                   }
-                   else
-                   {
-                       label6.Text = "bu kitap başkasında yada şuan sende";
-                   }
-                  
-                  
-                  
                     
                 }
                 else
                 {
-                    label6.Text = "Kitabın adını yanlış yazdınız";
+                    label6.Text = "Kitabın adını yanlış yazmış olabilirsiniz\nKitap başkasında olabilir\nKitap sizde olabilir";
                 }
 
 
@@ -184,30 +173,24 @@ namespace WindowsFormsApp1
             {
                 sql.Baglantı();
                 sql.komut.Parameters.Clear();
-                sql.komut.CommandText = "select * from Table_kitaplar where ad = @adim ";
+                sql.komut.CommandText = "select * from Table_kitaplar where ad = @adim and durum = @durumum ";
                 sql.komut.Parameters.AddWithValue("adim", textBox1.Text);
+                sql.komut.Parameters.AddWithValue("durumum", sql.adim);
                 SqlDataReader oku = sql.komut.ExecuteReader();
                 if (oku.Read())
-                {
-
-                    if (oku["durum"].ToString() == sql.adim)
-                    {
+                {              
                         sql.baglan.Close();
                         sql.Baglantı();
                         sql.komut.CommandText = "update Table_kitaplar set durum = null where durum = @durumum";
                         sql.komut.Parameters.AddWithValue("durumum", sql.adim);
                         sql.komut.ExecuteNonQuery();
                         label6.Text = "kitabınız başarıyla iade edildi";
-                    }
-                    else
-                    {
-                        label6.Text = "sende olmayan kitabı geri veremessin";
-                    }
+                   
 
                 }
                 else
                 {
-                    label6.Text = "Kitabın adını yanlış yazdınız";
+                    label6.Text = "Kitabın adını yanlış yazmış olabilirsiniz \nKitap sende olmayabilir";
                 }
 
                 sql.baglan.Close();
