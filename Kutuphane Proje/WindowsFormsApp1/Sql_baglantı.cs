@@ -6,12 +6,19 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.Sql;
 using System.Data.SqlClient;
+using System.Runtime.CompilerServices;
 
 namespace WindowsFormsApp1
 {
     class Sql_baglantı
     {
-        public static string adim; 
+        private static string ad;
+        public string adim
+        {
+            get {return ad; }
+            set {ad = value; }
+        }
+
 
         public SqlConnection baglan;
         public SqlCommand komut;
