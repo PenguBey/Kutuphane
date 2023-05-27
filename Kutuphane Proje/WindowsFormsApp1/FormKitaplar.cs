@@ -201,12 +201,67 @@ namespace WindowsFormsApp1
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            if(textBox1.Text != "" && textBox2.Text != "" && comboBox2.SelectedIndex != 0)
+            {
+                sql.Baglantı();
+                sql.komut.Parameters.Clear();
+                sql.komut.CommandText = "select * from Table_kitaplar where ad = @adim and yazar = @yazarım and tür = @türüm";
+                sql.komut.Parameters.AddWithValue("adim",textBox1.Text);
+                sql.komut.Parameters.AddWithValue("yazarım",textBox2.Text);
+                sql.komut.Parameters.AddWithValue("türüm",comboBox2.SelectedItem);
+                SqlDataReader oku = sql.komut.ExecuteReader();
+                if (oku.Read())
+                {
+                    sql.baglan.Close();
+                    sql.Baglantı();
+                    sql.komut.CommandText = "delete from Table_kitaplar where ad = @adim";
+                    sql.komut.Parameters.AddWithValue("adim", textBox1.Text);
+                    sql.komut.ExecuteNonQuery();
+                    label6.Text = "Kitap başarılı bir şekilde silindi";
+                }
+                else
+                {
+                    label6.Text = "Bu kitap yok";
+                }
+                sql.baglan.Close();
+            }
+            else
+            {
+                label6.Text = "sileceğiniz kitabın bilgilerini eksiksiz doldurunuz";
+            }
         }
 
         private void buttonsil_Click(object sender, EventArgs e)
         {
-
+            if (textBox1.Text != "" && textBox2.Text != "" && comboBox2.SelectedIndex != 0)
+            {
+                sql.Baglantı();
+                sql.komut.Parameters.Clear();
+                sql.komut.CommandText = "select * from Table_kitaplar where ad = @adim ";
+                sql.komut.Parameters.AddWithValue("adim", textBox1.Text);
+ 
+                SqlDataReader oku = sql.komut.ExecuteReader();
+                if (oku.Read())
+                {
+                    label6.Text = "Bu kitap zaten kayıtlı";
+                }
+                else
+                {
+                    sql.baglan.Close();
+                    sql.Baglantı();
+                    sql.komut.CommandText = "insert into Table_kitaplar (ad,yazar,tür) values (@adim,@yazarim,@türüm)";
+                    sql.komut.Parameters.AddWithValue("adim", textBox1.Text);
+                    sql.komut.Parameters.AddWithValue("yazarim", textBox2.Text);
+                    sql.komut.Parameters.AddWithValue("türüm", comboBox2.SelectedItem);
+                    sql.komut.ExecuteNonQuery();
+                    label6.Text = "Kitap başarılı bir şekilde eklendi";
+                }
+                sql.baglan.Close();
+            }
+            else
+            {
+                label6.Text = "ekleyeceğiniz kitabın bilgilerini eksiksiz doldurunuz";
+            }
         }
     }
 }

@@ -258,7 +258,7 @@
             this.buttonsil.Name = "buttonsil";
             this.buttonsil.Size = new System.Drawing.Size(75, 23);
             this.buttonsil.TabIndex = 11;
-            this.buttonsil.Text = " Sil";
+            this.buttonsil.Text = "Ekle";
             this.buttonsil.UseVisualStyleBackColor = true;
             this.buttonsil.Visible = false;
             this.buttonsil.Click += new System.EventHandler(this.buttonsil_Click);
@@ -270,7 +270,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 11;
-            this.button4.Text = " Ekle";
+            this.button4.Text = " Sil";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Visible = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
