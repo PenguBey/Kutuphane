@@ -105,11 +105,17 @@ namespace WindowsFormsApp1
         private void button2_Click(object sender, EventArgs e)
         {
             sql.Baglantı();
+            sql.komut.CommandText = "update Table_kitaplar set durum = null where durum = @ad";
+            sql.komut.Parameters.AddWithValue("ad", sql.adim);
+            sql.komut.ExecuteNonQuery();
+            sql.baglan.Close();
+            sql.Baglantı();
             sql.komut.CommandText = "delete from Table_giris where username = @adim";
             sql.komut.Parameters.AddWithValue ("adim", sql.adim);
             sql.komut.ExecuteNonQuery();
             Application.Exit();
             sql.baglan.Close();
+            
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
