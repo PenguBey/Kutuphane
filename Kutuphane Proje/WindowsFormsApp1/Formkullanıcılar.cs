@@ -61,6 +61,13 @@ namespace WindowsFormsApp1
                 {
                     sql.baglan.Close();
                     sql.Baglantı();
+                    sql.komut.Parameters.Clear();
+                    sql.komut.CommandText = "update Table_kitaplar set durum = @duruumyeter where durum = @Trololololololhehehehhe";
+                    sql.komut.Parameters.AddWithValue("duruumyeter", textBox1.Text);
+                    sql.komut.Parameters.AddWithValue("Trololololololhehehehhe", sql.adim);
+                    sql.komut.ExecuteNonQuery();
+                    sql.baglan.Close();
+                    sql.Baglantı();
                     degerler.Add(" username = @adim");
                     sql.komut.Parameters.AddWithValue("adim", textBox1.Text);
                 }
@@ -97,6 +104,7 @@ namespace WindowsFormsApp1
                 }
                 sql.adim = textBox1.Text;
                 sifrem = textBox2.Text;
+                
             }
             sql.baglan.Close();
             
