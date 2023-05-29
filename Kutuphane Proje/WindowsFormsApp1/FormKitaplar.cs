@@ -35,7 +35,7 @@ namespace WindowsFormsApp1
             comboBox2.SelectedIndex = 0;
             sql.Baglantı();
             sql.komut.CommandText = "select * from Table_kitaplar";
-            sorgulamak();
+            yazdir();
 
             sql.baglan.Close();
         }
@@ -87,11 +87,11 @@ namespace WindowsFormsApp1
             }
             sorgu += string.Join("and", filtreler);
             sql.komut.CommandText = sorgu;
-            sorgulamak();
+            yazdir();
             sql.baglan.Close();
             
         }
-        private void sorgulamak()
+        private void yazdir()
         {
             SqlDataReader oku = sql.komut.ExecuteReader();
             while (oku.Read())
@@ -221,7 +221,7 @@ namespace WindowsFormsApp1
                 }
                 else
                 {
-                    label6.Text = "Bu kitap yok";
+                    label6.Text = "Bu kitap yok yada bilgileri yanış girdiniz";
                 }
                 sql.baglan.Close();
             }

@@ -31,6 +31,16 @@ namespace WindowsFormsApp1
             formKitaplar.ShowDialog(); 
             
         }
+
+        private void FormMenu_Load(object sender, EventArgs e)
+        {
+            Sql_baglantı sql = new Sql_baglantı();
+            if (sql.adim == "admin")
+            {
+                button2.Enabled = false;
+                button2.Visible = false;
+            }
+        }
     }
 }
  
