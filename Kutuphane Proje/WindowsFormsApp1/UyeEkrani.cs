@@ -77,8 +77,15 @@ namespace WindowsFormsApp1
 
         private void FormUye_Load(object sender, EventArgs e)
         {
+          //  this.MaximizeBox = false;
+           // this.MinimizeBox = false;
+            this.ControlBox = false;
             this.MaximumSize = this.Size;
             this.MinimumSize = this.Size;
+            panel1.MaximumSize = panel1.Size;
+            panel1.MinimumSize = panel1.Size;
+
+
         }
     }
 }

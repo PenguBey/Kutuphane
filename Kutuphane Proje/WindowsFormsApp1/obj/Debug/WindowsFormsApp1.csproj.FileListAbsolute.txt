@@ -36,3 +36,17 @@ D:\GitHub\kutuphane\Kutuphane Proje\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.
 D:\GitHub\kutuphane\Kutuphane Proje\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 D:\GitHub\kutuphane\Kutuphane Proje\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormKitaplar.resources
 D:\GitHub\kutuphane\Kutuphane Proje\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Formkullanıcılar.resources
+C:\Users\Admin\Desktop\Kutuphane\Kutuphane Proje\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Admin\Desktop\Kutuphane\Kutuphane Proje\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Admin\Desktop\Kutuphane\Kutuphane Proje\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Admin\Desktop\Kutuphane\Kutuphane Proje\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\Kutuphane\Kutuphane Proje\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormKitaplar.resources
+C:\Users\Admin\Desktop\Kutuphane\Kutuphane Proje\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Formkullanıcılar.resources
+C:\Users\Admin\Desktop\Kutuphane\Kutuphane Proje\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormUye.resources
+C:\Users\Admin\Desktop\Kutuphane\Kutuphane Proje\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormGiris.resources
+C:\Users\Admin\Desktop\Kutuphane\Kutuphane Proje\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormMenu.resources
+C:\Users\Admin\Desktop\Kutuphane\Kutuphane Proje\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Admin\Desktop\Kutuphane\Kutuphane Proje\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\Kutuphane\Kutuphane Proje\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Kutuphane\Kutuphane Proje\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Admin\Desktop\Kutuphane\Kutuphane Proje\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
