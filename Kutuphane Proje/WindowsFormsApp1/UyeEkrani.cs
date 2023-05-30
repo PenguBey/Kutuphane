@@ -77,15 +77,29 @@ namespace WindowsFormsApp1
 
         private void FormUye_Load(object sender, EventArgs e)
         {
-          //  this.MaximizeBox = false;
-           // this.MinimizeBox = false;
-            this.ControlBox = false;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.MaximumSize = this.Size;
             this.MinimumSize = this.Size;
             panel1.MaximumSize = panel1.Size;
             panel1.MinimumSize = panel1.Size;
+            timer1.Start();
 
-
+        }
+        int sayac;
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            sayac = sayac + 1;
+            if (sayac != 110)
+            {
+                panel2.Width = panel2.Width + 3;
+                panel2.Height = panel2.Height + 2;
+            }
+            else
+            {
+                panel2.Enabled = true;
+                timer1.Stop();
+            }
         }
     }
 }
