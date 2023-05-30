@@ -150,7 +150,7 @@
             this.panel2.Location = new System.Drawing.Point(130, 133);
             this.panel2.MaximumSize = new System.Drawing.Size(258, 202);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(258, 202);
+            this.panel2.Size = new System.Drawing.Size(10, 10);
             this.panel2.TabIndex = 7;
             // 
             // label6
