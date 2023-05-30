@@ -1,14 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.Data.Sql;
 using System.Data.SqlClient;
+using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
@@ -58,8 +51,8 @@ namespace WindowsFormsApp1
                 label3.Text = "Lütfen kullanıcı adınızı ve şifrenizi tam doldurunuz!";
                 textBox1.Focus();
             }
-     
-            
+
+
             sql.baglan.Close();
         }
 
@@ -71,7 +64,7 @@ namespace WindowsFormsApp1
         private void label5_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FormGiris gec =new FormGiris();
+            FormGiris gec = new FormGiris();
             gec.Show();
         }
 
@@ -90,15 +83,15 @@ namespace WindowsFormsApp1
             label1.MaximumSize = label1.Size;
             label1.MinimumSize = label1.Size;
             label2.MaximumSize = label2.Size;
-            label2.MaximumSize = label2.Size;
+            label2.MinimumSize = label2.Size;
             label3.MaximumSize = label3.Size;
-            label3.MaximumSize = label3.Size;
+            label3.MinimumSize = label3.Size;
             label4.MaximumSize = label4.Size;
-            label4.MaximumSize = label4.Size;
+            label4.MinimumSize = label4.Size;
             label5.MaximumSize = label5.Size;
-            label5.MaximumSize = label5.Size;
+            label5.MinimumSize = label5.Size;
             label6.MaximumSize = label6.Size;
-            label6.MaximumSize = label6.Size;
+            label6.MinimumSize = label6.Size;
             button1.MaximumSize = button1.Size;
             button1.MinimumSize = button1.Size;
             timer1.Start();
