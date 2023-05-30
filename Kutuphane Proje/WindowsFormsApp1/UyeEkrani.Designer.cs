@@ -108,9 +108,9 @@
             this.label5.ForeColor = System.Drawing.Color.Blue;
             this.label5.Location = new System.Drawing.Point(350, 280);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(58, 13);
+            this.label5.Size = new System.Drawing.Size(51, 13);
             this.label5.TabIndex = 5;
-            this.label5.Text = "Giriş Yap";
+            this.label5.Text = "Giriş Ya";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // panel1

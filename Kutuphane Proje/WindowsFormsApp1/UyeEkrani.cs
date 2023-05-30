@@ -77,7 +77,8 @@ namespace WindowsFormsApp1
 
         private void FormUye_Load(object sender, EventArgs e)
         {
-
+            this.MaximumSize = this.Size;
+            this.MinimumSize = this.Size;
         }
     }
 }
