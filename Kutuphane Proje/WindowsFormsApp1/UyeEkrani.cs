@@ -83,6 +83,24 @@ namespace WindowsFormsApp1
             this.MinimumSize = this.Size;
             panel1.MaximumSize = panel1.Size;
             panel1.MinimumSize = panel1.Size;
+            textBox1.MaximumSize = textBox1.Size;
+            textBox1.MinimumSize = textBox1.Size;
+            textBox2.MaximumSize = textBox2.Size;
+            textBox2.MinimumSize = textBox2.Size;
+            label1.MaximumSize = label1.Size;
+            label1.MinimumSize = label1.Size;
+            label2.MaximumSize = label2.Size;
+            label2.MaximumSize = label2.Size;
+            label3.MaximumSize = label3.Size;
+            label3.MaximumSize = label3.Size;
+            label4.MaximumSize = label4.Size;
+            label4.MaximumSize = label4.Size;
+            label5.MaximumSize = label5.Size;
+            label5.MaximumSize = label5.Size;
+            label6.MaximumSize = label6.Size;
+            label6.MaximumSize = label6.Size;
+            button1.MaximumSize = button1.Size;
+            button1.MinimumSize = button1.Size;
             timer1.Start();
 
         }
