@@ -16,24 +16,29 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
-
+        FormKitaplar formKitaplar = new FormKitaplar();
+        Formkullanıcılar gec = new Formkullanıcılar();
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Formkullanıcılar gec = new Formkullanıcılar();
             gec.ShowDialog();
         }
 
         private void button1_Click(object sender, EventArgs e)
+
         {
             this.Hide();
-            FormKitaplar formKitaplar = new FormKitaplar();
-            formKitaplar.ShowDialog(); 
-            
+            formKitaplar.Show();
         }
 
         private void FormMenu_Load(object sender, EventArgs e)
         {
+            button1.Click += button1_Click;
+            button2.Click += button2_Click;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.MaximumSize = this.Size;
+            this.MinimumSize = this.Size;
             Sql_baglantı sql = new Sql_baglantı();
             if (sql.adim == "admin")
             {
