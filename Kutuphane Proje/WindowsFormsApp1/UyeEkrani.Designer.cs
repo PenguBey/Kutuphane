@@ -38,8 +38,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -132,8 +132,19 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(548, 96);
+            this.panel1.Size = new System.Drawing.Size(449, 96);
             this.panel1.TabIndex = 6;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 54.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label6.ForeColor = System.Drawing.SystemColors.Control;
+            this.label6.Location = new System.Drawing.Point(83, 9);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(280, 85);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "ÜYE OL";
             // 
             // panel2
             // 
@@ -147,21 +158,11 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Enabled = false;
-            this.panel2.Location = new System.Drawing.Point(130, 133);
-            this.panel2.MaximumSize = new System.Drawing.Size(258, 202);
+            this.panel2.Location = new System.Drawing.Point(98, 127);
+            this.panel2.MaximumSize = new System.Drawing.Size(258, 187);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(10, 10);
             this.panel2.TabIndex = 7;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 54.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(115, 7);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(280, 85);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "ÜYE OL";
             // 
             // timer1
             // 
@@ -173,7 +174,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PeachPuff;
-            this.ClientSize = new System.Drawing.Size(548, 392);
+            this.ClientSize = new System.Drawing.Size(449, 377);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -181,6 +182,7 @@
             this.Name = "FormUye";
             this.Text = "Üye Ekranı";
             this.Load += new System.EventHandler(this.FormUye_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormUye_KeyDown);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

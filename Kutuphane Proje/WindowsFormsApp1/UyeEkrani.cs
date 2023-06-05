@@ -112,5 +112,23 @@ namespace WindowsFormsApp1
                 timer1.Stop();
             }
         }
+        bool timerstarter = true;
+        private void FormUye_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.E || e.KeyCode == Keys.Space)
+            {
+                if (timerstarter == true)
+                {
+                    timer1.Enabled = false;
+                    panel2.Size = panel2.MaximumSize;
+                    panel2.Enabled = true;
+                    timerstarter = false;
+                }
+                else
+                {
+                    timerstarter = true;
+                }
+            }
+        }
     }
 }
