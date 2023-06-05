@@ -119,7 +119,7 @@ namespace WindowsFormsApp1
             {
                 if (timerstarter == true)
                 {
-                    timer1.Enabled = false;
+                    timer1.Enabled = fals;
                     panel2.Size = panel2.MaximumSize;
                     panel2.Enabled = true;
                     timerstarter = false;
