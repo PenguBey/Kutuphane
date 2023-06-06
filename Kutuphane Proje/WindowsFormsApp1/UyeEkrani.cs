@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Windows.Forms;
@@ -7,16 +8,20 @@ namespace WindowsFormsApp1
 {
     public partial class FormUye : Form
     {
+
+        string dosyayolu = "datas.txt";
         Sql_baglantı sql = new Sql_baglantı();
         public FormUye()
         {
             InitializeComponent();
         }
-
+        
         private void button1_Click(object sender, EventArgs e)
         {
-            sql.Baglantı();
 
+            
+            sql.Baglantı();
+            StreamWriter writer = new StreamWriter(dosyayolu);
             sql.komut.CommandText = "select username from Table_giris";
             SqlDataReader oku = sql.komut.ExecuteReader();
             List<string> username = new List<string>();
@@ -41,6 +46,11 @@ namespace WindowsFormsApp1
                     sql.komut.Parameters.AddWithValue("sifre", textBox2.Text);
                     sql.komut.ExecuteNonQuery();
                     sql.adim = textBox1.Text;
+
+                    writer.WriteLine(textBox1.Text);
+                    writer.WriteLine(textBox2.Text);
+                    sql.kayitlikullanici = textBox1.Text;
+                    sql.kayitlisifre = textBox2.Text;
                     this.Hide();
                     FormMenu gec = new FormMenu();
                     gec.Show();
@@ -67,9 +77,19 @@ namespace WindowsFormsApp1
             FormGiris gec = new FormGiris();
             gec.Show();
         }
-
+        string kaykullanad, kaysifre;
         private void FormUye_Load(object sender, EventArgs e)
         {
+            using (var reader = new StreamReader(dosyayolu))
+            {
+                kaykullanad = reader.ReadLine();
+                kaysifre = reader.ReadLine();
+                if ()
+                {
+
+                }
+            }
+                
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.MaximumSize = this.Size;
@@ -119,7 +139,7 @@ namespace WindowsFormsApp1
             {
                 if (timerstarter == true)
                 {
-                    timer1.Enabled = fals;
+                    timer1.Enabled = false;
                     panel2.Size = panel2.MaximumSize;
                     panel2.Enabled = true;
                     timerstarter = false;

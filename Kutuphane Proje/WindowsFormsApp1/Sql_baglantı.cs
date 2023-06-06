@@ -30,8 +30,16 @@ namespace WindowsFormsApp1
             komut.Connection = baglan;
             
         }
-
-        
+        private static string kakullanici, kasifre;
+        public string kayitlikullanici  
+        { 
+            get{ return kakullanici; } 
+            set{ kakullanici = value; } 
+        }
+        public string kayitlisifre { 
+            get { return kasifre; }
+            set { kasifre = value; }
+        }
 
     }
 }
