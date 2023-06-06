@@ -3,6 +3,7 @@ using System.IO;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using System.Net;
 
 namespace WindowsFormsApp1
 {
@@ -41,9 +42,12 @@ namespace WindowsFormsApp1
                 else
                 {
                     sql.komut.Parameters.Clear();
-                    sql.komut.CommandText = "insert into Table_giris (username,password) values (@ad,@sifre)";
+                    sql.komut.CommandText = "insert into Table_giris (username,password,ip) values (@ad,@sifrei,@ipm)";
                     sql.komut.Parameters.AddWithValue("ad", textBox1.Text);
-                    sql.komut.Parameters.AddWithValue("sifre", textBox2.Text);
+                    sql.komut.Parameters.AddWithValue("sifrei", textBox2.Text);
+                    string hostName = Dns.GetHostName();
+                    string myIP = Dns.GetHostByName(hostName).AddressList[0].ToString();
+                    sql.komut.Parameters.AddWithValue("ipm", myIP);
                     sql.komut.ExecuteNonQuery();
                     sql.adim = textBox1.Text;
 
@@ -84,7 +88,7 @@ namespace WindowsFormsApp1
             {
                 kaykullanad = reader.ReadLine();
                 kaysifre = reader.ReadLine();
-                if ()
+                if (true)
                 {
 
                 }
