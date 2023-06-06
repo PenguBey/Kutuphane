@@ -90,10 +90,10 @@ namespace WindowsFormsApp1
                 kaysifre = reader.ReadLine();
                 if (true)
                 {
-
+                    //txt dosyasını kontrol etmek için kullan
                 }
             }
-                
+            //Üye Olma Formunu Düzenler 
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.MaximumSize = this.Size;
