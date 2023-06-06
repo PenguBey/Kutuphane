@@ -9,8 +9,9 @@ namespace WindowsFormsApp1
 {
     public partial class FormUye : Form
     {
-
+        //Txt Dosyasının Yolunu Belirler
         string dosyayolu = "datas.txt";
+        //sql Classını Çağırır
         Sql_baglantı sql = new Sql_baglantı();
         public FormUye()
         {
@@ -20,10 +21,13 @@ namespace WindowsFormsApp1
         private void button1_Click(object sender, EventArgs e)
         {
 
-            
+            //sql bağlantısını açar
             sql.Baglantı();
+            //Txt Dosyasını Yazmak İçin StreamWriter Classını Ekler
             StreamWriter writer = new StreamWriter(dosyayolu);
+            //sql Komutu Ekler
             sql.komut.CommandText = "select username from Table_giris";
+            //sql Data Okumasını Yapar
             SqlDataReader oku = sql.komut.ExecuteReader();
             List<string> username = new List<string>();
             if (textBox1.Text != "" && textBox2.Text != "")
