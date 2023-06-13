@@ -33,6 +33,13 @@ namespace WindowsFormsApp1
 
         private void FormMenu_Load(object sender, EventArgs e)
         {
+            saat = int.Parse(naber.ToString("hh"));
+            dak = int.Parse(naber.ToString("mm"));
+            san = int.Parse(naber.ToString("ss"));
+            label1.Text = saat.ToString();
+            label2.Text = dak.ToString();
+            label3.Text = san.ToString();
+            timer1.Start();
             button1.Click += button1_Click;
             button2.Click += button2_Click;
             this.MaximizeBox = false;
@@ -45,6 +52,17 @@ namespace WindowsFormsApp1
                 button2.Enabled = false;
                 button2.Visible = false;
             }
+        }
+        DateTime naber = DateTime.Now;
+        int saat, dak, san;
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            saat = int.Parse(naber.ToString("hh"));
+            dak = int.Parse(naber.ToString("mm"));
+            san = int.Parse(naber.ToString("ss"));
+            label1.Text = saat.ToString();
+            label2.Text = dak.ToString();
+            label3.Text = san.ToString();
         }
     }
 }
